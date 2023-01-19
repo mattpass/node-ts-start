@@ -1,5 +1,7 @@
-node_modules
+coverage
 dist
+node_modules
+.env
 package.json
 package-lock.json
 tsconfig.json
