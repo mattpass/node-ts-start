@@ -4,6 +4,8 @@
 
 This repo provides a boilerplate-fresh starting point for a solely Node and TypeScript based project. This boilerplate is ideal as a backend service only, for instance, as an API to provide responses to a frontend.
 
+Upon building, the `index.ts` file is compiled to the `dist` dir and it is `dist/index.js` that is ran by `node` or `nodemon`. 
+
 ## Flexibility:
 
 This repo uses `NodeNext` as the module type so that you can use Common JS modules or ES6 import/export side-by-side. A reminder of how these both look in code:
@@ -33,7 +35,7 @@ chmod + x setup.sh
 ./setup.sh
 ```
 
-Once it's install,ed, you can then use as per info below.
+Once it's installed, you can then use as per info below.
 
 ## Usage:
 
