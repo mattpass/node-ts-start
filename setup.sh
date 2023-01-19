@@ -1,11 +1,12 @@
 echo "* Initializing and customizing NPM"
 npm init -y > /dev/null
 sed -i '6 i \ \ "type": "module",' package.json
-sed -i '8 i \ \ \ \ "build": "rimraf dist && npx tsc",\
+sed -i '8 i \ \ \ \ "build": "npm run compile && echo \\"dist dir rebuilt!\\"",\
+\ \ \ \ "compile": "rimraf dist && npx tsc",\
 \ \ \ \ "dev": "clear && concurrently \\"npx tsc -w\\" \\"nodemon dist/index.js\\"",\
 \ \ \ \ "start": "clear && node dist/index.js",\
-\ \ \ \ "predev": "npm run build",\
-\ \ \ \ "prestart": "npm run build",' package.json
+\ \ \ \ "predev": "npm run compile",\
+\ \ \ \ "prestart": "npm run compile",' package.json
 echo "* Dev env: (adding: types)"
 npm i -D @types/node @types/express @types/cors @types/request @typescript-eslint/eslint-plugin > /dev/null
 echo "* Dev env: (adding: modules)"
