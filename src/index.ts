@@ -1,9 +1,9 @@
 import express, { Express, Request, Response } from 'express'
 import cors from 'cors'
-import request from 'request'
+// import request from 'request'
 
 const app: Express = express()
-const PORT: number = 3000
+const PORT = 3000
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
