@@ -1,6 +1,8 @@
 # Node TS Start
 
-This repo provides a boilerplate fresh starting point for a Node and TypeScript based project, containing many best practices and modern approaches.
+**Ideal for API responses, eg api.domain.com**
+
+This repo provides a boilerplate-fresh starting point for a solely Node and TypeScript based project. This boilerplate is ideal as a backend service only, for instance, as an API to provide responses to a frontend.
 
 ## Flexibility:
 
@@ -21,6 +23,7 @@ Due to using `NodeNext` as the module type, you will need to include `.js` file 
 | node_modules | `const express = require('express');` |
 
 ## Install:
+
 This repo was created via:
 
 ```bash
